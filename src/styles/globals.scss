@@ -1,7 +1,49 @@
+:root {
+  --color-background: #1a1d23;
+  --color-text-heading: #f8f8f8;
+  --color-text-body: #d7d7d7;
+  --color-text-info: ##bbbbbb;
+  --color-highlight: #ff57b2;
+
+  --container-max-width: calc(720px + 4rem);
+  --container-x-gutter: 2rem;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-// TODO
+html {
+  font-size: 87.5%;
+
+  @media (min-width: 720px) {
+    font-size: 93.75%;
+  }
+
+  @media (min-width: 1080px) {
+    font-size: 100%;
+  }
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--color-background);
+  color: var(--color-text-body);
+}
+
+body, input, select, textarea, button {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
