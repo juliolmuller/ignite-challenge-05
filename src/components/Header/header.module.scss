@@ -1,1 +1,10 @@
-// TODO
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 2.5rem var(--container-x-gutter);
+}
